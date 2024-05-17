@@ -1,0 +1,20 @@
+{
+    "name": "Market L\u00ed\u0161e\u0148",
+    "short_name": "Market L\u00ed\u0161e\u0148",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#f6f3b0",
+    "background_color": "#f6f3b0",
+    "start_url": "https://marketlisen.cz",
+    "display": "standalone"
+}

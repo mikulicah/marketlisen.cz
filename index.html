@@ -46,7 +46,30 @@
             <h3>9:30-17:00</h3>
             
         </div>-->
-        
+        <div class="closed_zkraceno_1" style="display: none;">
+            <h1>Zkrácená otevírací doba</h1>
+            <h2>Pátek 27. 6. 2025</h2>
+            <h3>8:00-14:00</h3>
+        </div>
+
+        <div class="closed_dovolena_1" style="display: none;">
+            <h1>Dovolená</h1>
+            <h2>30. 6. - 13.7.2025</h2>
+            <h3>Zavřeno</h3> 
+        </div>
+
+        <div class="closed_zkraceno_2" style="display: none;">
+            <h1>Zkrácená otevírací doba</h1>
+            <h2>Pátek 1. 8. 2025</h2>
+            <h3>8:00-14:00</h3>
+        </div>
+
+        <div class="closed_dovolena_2" style="display: none;">
+            <h1>Dovolená</h1>
+            <h2>4. 8. - 10.8.2025</h2>
+            <h3>Zavřeno</h3> 
+        </div>
+
         <div class="text">
             <h2>Nabízíme</h2>    
             <p>
@@ -123,5 +146,44 @@
         </div>
         
             <p class="autor">&copy; 2022 - 2025 Honza Mikulica</p>
+
+        <script>
+        function isDateInRange(date, start, end) {
+            return date >= start && date <= end;
+        }
+
+        const today = new Date();
+
+        const ranges = [
+            {
+            className: "closed_zkraceno_1",
+            start: new Date("2025-06-18"),
+            end: new Date("2025-07-28"),
+            },
+            {
+            className: "closed_dovolena_1",
+            start: new Date("2025-06-18"),
+            end: new Date("2025-07-13"),
+            },
+            {
+            className: "closed_zkraceno_2",
+            start: new Date("2025-07-14"),
+            end: new Date("2025-08-02"),
+            },
+            {
+            className: "closed_dovolena_2",
+            start: new Date("2025-07-14"),
+            end: new Date("2025-08-10"),
+            },
+        ];
+
+        ranges.forEach(range => {
+            if (isDateInRange(today, range.start, range.end)) {
+            const el = document.querySelector("." + range.className);
+            if (el) el.style.display = "block";
+            }
+        });
+        </script>
+
     </body>
 </html>

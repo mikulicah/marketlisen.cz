@@ -28,24 +28,6 @@
             <a href="zdroje/logo.png"> <img src="zdroje/logo.png" alt="Logo" title="Logo" width="15%"></a>
         </div>
 
-        <!--
-        <div class="closed">
-           
-            <h1>Přejeme Vám krásné Vánoce a úspěšný nový rok</h1>
-            <br>
-            <h2>24. 12. 2025</h2>
-            <h2>Zavřeno</h2><h2>8:00 - 15:00</h2>
-            
-        </div>-->
-        
-        <!--
-        <div class="closed">
-           
-            <h1>Mimořádná otevírací doba</h1>
-            <h2>9. 6. 2025</h2>
-            <h3>9:30-17:00</h3>
-            
-        </div>-->
         <div class="closed_zkraceno_1" style="display: none;">
             <h1>Zkrácená otevírací doba</h1>
             <h2>Pátek 27. 6. 2025</h2>
@@ -111,12 +93,22 @@
         </div>
 
         <ul class="opentime">
-            <h2>Otevírací doba</h2>
-            <li>Pondělí - Pátek: <br><b>8:00 - 17:00</b></li>
-            <br>
-            <li>Sobota - Neděle: <br><b>Zavřeno</b></li>
-            <br>
-            <li><b><h3>Svátky zavřeno</h3></b></li> 
+                <div class="opentime_till_147" style="display: none">
+                <h2>Otevírací doba</h2>
+                <li>Pondělí - Pátek: <br><b>8:00 - 17:00</b></li>
+                <br>
+                <li>Sobota - Neděle: <br><b>Zavřeno</b></li>
+                <br>
+                <li><b><h3>Svátky zavřeno</h3></b></li>
+                </div> 
+                <div class="opentime_from_147" style="display: none;">
+                <h2>Otevírací doba</h2>
+                <li>Pondělí - Pátek: <br><b>9:00 - 16:00</b></li>
+                <br>
+                <li>Sobota - Neděle: <br><b>Zavřeno</b></li>
+                <br>
+                <li><b><h3>Svátky zavřeno</h3></b></li>
+                </div> 
             <br>
             <h2>Adresa</h2>
             <address>
@@ -125,6 +117,7 @@
                 Brno 628 00</li> 
             </address>    
         </ul>
+
         <div class="kontakt">
             <a href="tel:+420731526658"><img src="zdroje/tel.png" alt="Tel" title="Tel" class="icon" width="70%"></a>
             <a href="mailto:mikulicovaj@seznam.cz"><img src="zdroje/mail.png" alt="Mail" title="Mail" class="icon" width="70%"></a>       
@@ -174,6 +167,16 @@
             className: "closed_dovolena_2",
             start: new Date("2025-07-14"),
             end: new Date("2025-08-10"),
+            },
+            {
+            className: "opentime_till_147",
+            start: new Date("2025-06-18"),
+            end: new Date("2025-07-11"),
+            },
+            {
+            className: "opentime_from_147",
+            start: new Date("2025-07-12"),
+            end: new Date("2025-08-31"),
             },
         ];
 
